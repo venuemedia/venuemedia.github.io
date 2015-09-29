@@ -1,0 +1,61 @@
+---
+layout: page
+title: Partners
+permalink: /partners/
+partners:
+  - name: Learfield Sports
+    description: Venue Media has recently forged a strong partnership with Learfield Sports. who have marketing agreements with fifty of the largest colleges and universities in the United States.  Learfield Sports are proud to represent nearly 100 collegiate properties throughout the country.  Learfield Sports empowers businesses and unversities by connecting big brands to the excitement, passion, tradition, fans and FUN of college sports. Our strategy is to work along side Learfield Sports in helping create customized campaings, utilizing our digital information system, to meet each universities marketing objectives.
+    site: www.learfieldsports.com
+    logo_url: http://static.wixstatic.com/media/6fca4b_7fb2ab573bbf49a193144408f253c277.png_srz_p_112_112_75_22_0.50_1.20_0.00_png_srz
+  - name: California Polytechnic State University, Cal Poly Mustangs
+    description: The Cal Poly Mustangs represent California Polytechnic State University in San Luis Obispo, California, in intercollegiate athletics.  They field twenty teams including men and women's basketball, track and field, football, wrestling and many more. Venue Media has recently agreed to install a minimum of 12 digital information screens within the sports complex. Our strategy here is to provide all Poly students, Faculty, Alumni and Fans with information on ALL Mustang sporting events, as well as providing local businesses the opportunity to bolster their own brand and garner maximum exposure through our digital information screens.
+    site: www.gopoly.com
+    logo_url: http://static.wixstatic.com/media/6fca4b_85f770467d2a446ea7dcc92ff910f81c.jpg_srz_p_165_83_75_22_0.50_1.20_0.00_jpg_srz
+  - name: K1 Speed
+    description: Founded in 2003, K1 Speed is now the premier karting company in Amercia.  With kart racing centers nationwide, K1 Speed brings the thrill and excitement of indoor karting to a large audience. Venue Media has recently agreed to install digital information screens across multiple centers throughout California. Our strategy here is to provide all K1 Speed customers with information regarding special events and offers, as well as providing local businesses the opportunity to advertise their services through our digital information screens.
+    site: www.k1speed.com
+    logo_url: http://static.wixstatic.com/media/6fca4b_4ab3abc546934b3ba5f2b3bce2fbbbc4.png_srz_p_152_92_75_22_0.50_1.20_0.00_png_srz
+  - name: SMG Europe
+    description: Beginning in 1977 with their first account, the Louisiana Superdome (now the Mercedes Benz Superdome), SMG has continually defined a management philiosophy and style that has led to their industry-leading position, with in excess of 220 venues throughout the United States, Canada, Puerto Rico, Chile, England, Northern Ireland, Poland and Germany. Venue Media has recently agreed to install digital information screens across multiple venues throughout England, with the first being The Metro Radio Arena, Newcastle, with a capacity of up to around 11,400. Our strategy here once again, is to work along side SMG in helping create customized campaings, utilizing our digital information system, to meet each venues marketing objectives.
+    site: www.smg-europe.com
+    logo_url: http://static.wixstatic.com/media/6fca4b_e1b889b9ac0f4c92b83a5b9c64f0b158.jpg_srz_p_170_94_75_22_0.50_1.20_0.00_jpg_srz
+---
+
+<p class="lead">
+    We couldn't do what we do without our amazing partners! We work with companies across the United States, both nationally and at a local level.  Together we make a significant difference to the growth of your business.  We'll work with you to build a unique partnership that plays to your business strengths, helps meet your goals and engages your clientele.
+
+<p>
+    We believe our partners are key to our success.  Whether you are a Medical Center, College, University, Garden Center or any other type of business, we want to work with you to provide solutions that will enhance your own customer service.
+</p>
+
+<p>
+    To learn more and become our partner, please contact us today!
+</p>
+
+
+{% for partner in page.partners %}
+
+<hr>
+
+<div class="row">
+    <div class="col-md-10">
+        <h3>
+            {{ partner.name }}
+        </h3>
+
+        <p>
+            {{ partner.description }}
+        </p>
+
+        <a href="http://{{ partnter.site }}">
+            {{ partner.site }}
+        </a>
+    </div>
+    
+    <div class="col-md-2">
+        <img src="{{ partner.logo_url }}" alt="">
+    </div>
+</div>
+{% endfor %}
+
+<hr>

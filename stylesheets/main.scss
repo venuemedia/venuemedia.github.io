@@ -1,0 +1,56 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+  "bootstrap-custom-variables", // Custom variables must load before bootstrap.
+  "bootstrap",
+  "syntax-highlighting"
+;
+
+body {
+    padding-top: 1em;
+}
+
+.nav {
+    margin-top: 1.1em;
+}
+
+    .btn {
+        margin-left: 1em;
+    }
+
+.register-side-copy p {
+    font-size: 1.3em;
+}
+
+.carousel-inner img {
+    min-width: 100%;
+}
+
+/* http://charliepark.org/bootstrap_buttons/ */
+/* Source color: #1462D8 ($brand-primary) */
+.btn-primary-custom {
+  
+  background-color: $brand-primary !important;
+  
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a6c6f6", endColorstr="#367fec");
+  
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#a6c6f6), to(#367fec));
+  background-image: -moz-linear-gradient(top, #a6c6f6, #367fec);
+  background-image: -ms-linear-gradient(top, #a6c6f6, #367fec);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a6c6f6), color-stop(100%, #367fec));
+  background-image: -webkit-linear-gradient(top, #a6c6f6, #367fec);
+  background-image: -o-linear-gradient(top, #a6c6f6, #367fec);
+  background-image: linear-gradient(#a6c6f6, #367fec);
+  
+  border-color: #367fec #367fec $brand-primary;
+  
+  color: #FFF !important;
+  
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.39);
+  -webkit-font-smoothing: antialiased;
+}

@@ -1,0 +1,145 @@
+---
+layout: page
+carousel_images:
+  - index: 0
+    src: /img/carousel/carousel_1.jpg
+  - index: 1
+    src: /img/carousel/carousel_2.jpg
+  - index: 2
+    src: /img/carousel/carousel_3.jpg
+  - index: 3
+    src: /img/carousel/carousel_4.jpg
+  - index: 4
+    src: /img/carousel/carousel_5.jpg
+---
+
+<div id="vm-carousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        {% for image in page.carousel_images %}
+        <li data-target="#vm-carousel"
+            data-slide-to="{{ image.index }}"
+            {% if image.index == 0 %}class="active"{% endif %}>
+        </li>
+        {% endfor %}
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        {% for image in page.carousel_images %}
+        <div class="item {% if image.index == 0 %}active{% endif %}">
+            <img src="{{ image.src }}" alt="venue media image">
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control"
+       href="#vm-carousel"
+       role="button"
+       data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true">
+        </span>
+
+        <span class="sr-only">
+            Previous
+        </span>
+    </a>
+
+    <a class="right carousel-control"
+       href="#vm-carousel"
+       role="button"
+       data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true">
+        </span>
+
+        <span class="sr-only">
+            Next
+        </span>
+    </a>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h3>
+            About Us
+        </h3>
+        <p>
+            Since 2014 Venue Media have specialized in providing digital advertising and information systems, giving high traffic exposure to local businesses.
+        </p>
+
+        <p>
+            We deliver high quality advertising using the latest technology.
+        </p>
+
+        <p>
+            Click below to find out more!
+        </p>
+
+        <a class="btn btn-primary-custom" href="/about/">
+            More Info
+        </a>
+    </div>
+
+    <div class="col-md-4">
+        <h3>
+            Venues
+        </h3>
+
+        <p>
+            We are always looking to align ourselves with quality venues, such as Medical Centers, Colleges and Universities, Leisure Centers, Sports and Music Arenas and Action/Adventure Centers. Places with high foot traffic would signficantly benefit from our network of screens!
+        </p>
+ 
+        <p>
+            If you think that your venue can benefit from digital signage, please get in touch!
+        </p>
+
+        <a class="btn btn-primary-custom" href="/venues/">
+            More Info
+        </a>
+    </div>
+
+    <div class="col-md-4">
+        <h3>
+            Our Product
+        </h3>
+
+        <p>
+            A custom digital information channel designed specifically for your business. An informative, dynamic media to convey information about your products, services and active campaigns. New content can be delivered to the screen instantly via the web ensuring your content is always up to date. If you wish our screens will also feature the latest news via RSS or even show your social media feed or the latest weather.
+        </p>
+
+        <a class="btn btn-primary-custom" href="/our_product/">
+            More Info
+        </a>
+    </div>
+</div>
+<br>
+<div class="row">
+    <h2 class="text-muted">
+        "A world full of noise <small>stand out with our</small> digital signage"
+    </h2>
+<br>
+    <div class="col-md-4">
+        <img src="/img/detail_1.png" alt="box office" class="img-responsive">
+    </div>
+
+    <div class="col-md-4">
+<br>
+        <p>
+            We present to your audience your promotions, campaigns and services on your own high definition LCD screen channel.
+        </p>
+        <br>
+         
+        <p>
+            Our brand new screens are professionally installed by our fully qualified enginneers, delivering a high standard of workmanship every time!
+        </p>
+         
+        <p>
+            
+        </p>
+    </div>
+
+    <div class="col-md-4">
+        <img src="/img/detail_2.png" alt="movie theater" class="img-responsive">
+    </div>
+</div>
