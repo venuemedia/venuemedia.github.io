@@ -1,3 +1,7 @@
 // Place your custom variables for Bootstrap here.
 
 $brand-primary: hsl(216, 83%, 57%);
+
+// 960px width fix from http://stackoverflow.com/a/21107438
+$grid-gutter-width: 20px;
+$container-large-desktop: ((940px + $grid-gutter-width));
