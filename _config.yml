@@ -1,8 +1,7 @@
 # Site settings
 title: Venue Media
 email: info@venuemediagroup.com
-copyright: > # this means to ignore newlines until "baseurl:"
-  &copy; 2015 Venue Media Group
+copyright: "&copy; 2015 Venue Media LLC"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://venuemediagroup.com" # the base hostname & protocol for your site
 
