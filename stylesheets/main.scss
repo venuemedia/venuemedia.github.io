@@ -54,3 +54,15 @@ body {
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.39);
   -webkit-font-smoothing: antialiased;
 }
+
+.colorized {
+  background-color: lighten($brand-primary, 2%) !important;
+  color: #FFF !important;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 0.2em 1em 1em 1em;
+}
+  
+.colorized h2, h3 {
+  color: lighten($brand-primary, 20%) !important;
+}
