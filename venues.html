@@ -4,21 +4,21 @@ title: Venues
 permalink: /venues/
 categories: navbar
 venue1:
-  name: Medical Centers &amp; Hospitals
-  color: primary
-  image_url: http://static.wixstatic.com/media/6fca4b_57172e40a086493588e7f9fa5d062dc6.jpg_srz_p_120_121_75_22_0.50_1.20_0.00_jpg_srz
+    name: Medical Centers &amp; Hospitals
+    color: primary
+    image_url: http://static.wixstatic.com/media/6fca4b_57172e40a086493588e7f9fa5d062dc6.jpg_srz_p_120_121_75_22_0.50_1.20_0.00_jpg_srz
 venue2:
-  name: Sports &amp; Leisure Complexes
-  color: warning
-  image_url: http://static.wixstatic.com/media/6fca4b_b8f6af66585c404c8342d357cfb5a563.jpg_srz_p_120_120_75_22_0.50_1.20_0.00_jpg_srz
+    name: Sports &amp; Leisure Complexes
+    color: warning
+    image_url: http://static.wixstatic.com/media/6fca4b_b8f6af66585c404c8342d357cfb5a563.jpg_srz_p_120_120_75_22_0.50_1.20_0.00_jpg_srz
 venue3:
-  name: Colleges &amp; Universities
-  color: success
-  image_url: http://static.wixstatic.com/media/6fca4b_c3894ffc7ef140468165001e5b27ab3d.jpg_srz_p_120_121_75_22_0.50_1.20_0.00_jpg_srz
+    name: Colleges &amp; Universities
+    color: success
+    image_url: http://static.wixstatic.com/media/6fca4b_c3894ffc7ef140468165001e5b27ab3d.jpg_srz_p_120_121_75_22_0.50_1.20_0.00_jpg_srz
 venue4:
-  name: Livestock Markets &amp; Veterinary Practices
-  color: danger
-  image_url: http://static.wixstatic.com/media/6fca4b_8fd640730eef45e29fd572f9526ab2b5.jpg_srz_p_120_121_75_22_0.50_1.20_0.00_jpg_srz
+    name: Livestock Markets &amp; Veterinary Practices
+    color: danger
+    image_url: http://static.wixstatic.com/media/6fca4b_8fd640730eef45e29fd572f9526ab2b5.jpg_srz_p_120_121_75_22_0.50_1.20_0.00_jpg_srz
 ---
 
 <div class="row">
@@ -28,54 +28,61 @@ venue4:
 </div>
 
 <div class="row">
-    <div class="col-md-6 bg-{{ page.venue1.color }}">
-        <div class="col-md-4">
-            <img src="{{ page.venue1.image_url }}"
-                 alt="{{ page.venue1.name }}">
-        </div>
+    <div class="col-md-6 venue-tile-primary">
+        <!-- <div class="container"> -->
+            <div class="col-md-4">
+                <img src="{{ page.venue1.image_url }}" alt="{{ page.venue1.name }}">
+            </div>
 
-        <div class="col-md-8">
-            <h3 class="text-right">
-                {{ page.venue1.name }}
-            </h3>
-        </div>
+            <div class="col-md-8">
+                <h2 class="text-right">
+                    {{ page.venue1.name }}
+                </h2>
+            </div>
+        <!-- </div> -->
     </div>
 
-    <div class="col-md-6 bg-{{ page.venue2.color }}">
-        <div class="col-md-4">
-            <img src="{{ page.venue2.image_url }}" alt="{{ page.venue2.name }}">
-        </div>
+    <div class="col-md-6 venue-tile-success">
+        <div>
+            <div class="col-md-4">
+                <img src="{{ page.venue2.image_url }}" alt="{{ page.venue2.name }}">
+            </div>
 
-        <div class="col-md-8">
-            <h3 class="text-right">
-                {{ page.venue2.name }}
-            </h3>
+            <div class="col-md-8">
+                <h2 class="text-right">
+                    {{ page.venue2.name }}
+                </h2>
+            </div>
         </div>
     </div>
 </div>
 
 <div class="row">
-    <div class="col-md-6 bg-{{ page.venue3.color }}">
-        <div class="col-md-4">
-            <img src="{{ page.venue3.image_url }}" alt="{{ page.venue3.name }}">
-        </div>
+    <div class="col-md-6 venue-tile-danger">
+        <div>
+            <div class="col-md-4">
+                <img src="{{ page.venue3.image_url }}" alt="{{ page.venue3.name }}">
+            </div>
 
-        <div class="col-md-8">
-            <h3 class="text-right">
-                {{ page.venue3.name }}
-            </h3>
+            <div class="col-md-8">
+                <h2 class="text-right">
+                    {{ page.venue3.name }}
+                </h2>
+            </div>
         </div>
     </div>
     
-    <div class="col-md-6 bg-{{ page.venue4.color }}">
-        <div class="col-md-4">
-            <img src="{{ page.venue4.image_url }}" alt="{{ page.venue4.name }}">
-        </div>
+    <div class="col-md-6 venue-tile-warning">
+        <div>
+            <div class="col-md-4">
+                <img src="{{ page.venue4.image_url }}" alt="{{ page.venue4.name }}">
+            </div>
 
-        <div class="col-md-8">
-            <h3 class="text-right">
-                {{ page.venue4.name }}
-            </h3>
+            <div class="col-md-8">
+                <h2 class="text-right">
+                        {{ page.venue4.name }}
+                </h2>
+            </div>
         </div>
     </div>
 </div>
@@ -88,7 +95,7 @@ venue4:
     </p>
 
     <p class="text-primary">
-      If you think that your venue fits with this strategy and would benefit, please get in touch!
+        If you think that your venue fits with this strategy and would benefit, please get in touch!
     </p>
 </div>
 
@@ -98,6 +105,6 @@ venue4:
     </a>
 
     <p class="text-primary">
-      Register today and become part of The Venue Media!
+        Register today and become part of The Venue Media!
     </p>
 </div>
