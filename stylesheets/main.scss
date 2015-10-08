@@ -71,8 +71,13 @@ body {
 }
 
 .venue-tile {
+
+    margin: 0.2em;
+    padding: 0.5em;
+
     h2, h3 {
         color: #FFF !important;
+        font-weight: 300 !important;
     }
 }
 
