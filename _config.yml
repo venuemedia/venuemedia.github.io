@@ -1,7 +1,7 @@
 # Site settings
 title: Venue Media
 email: info@venuemediagroup.com
-copyright: "&copy; 2015 Venue Media LLC"
+copyright: "&copy; 2016 Venue Media LLC"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://venuemediagroup.com" # the base hostname & protocol for your site
 
