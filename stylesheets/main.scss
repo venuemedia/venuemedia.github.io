@@ -70,6 +70,26 @@ body {
     }
 }
 
+.colorized-2 {
+    $color: #23BFA5;
+
+    background-color: lighten($color, 2%) !important;
+    color: #FFF !important;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding: 0.2em 1em 1em 1em;
+
+    h2, h3 {
+        color: lighten($color, 20%) !important;
+    }
+}
+
+.text-colorized-2 {
+    $color: #23BFA5;
+
+    color: darken($color, 10%);
+}
+
 .contact-form-container .form-control {
     margin-bottom: 10px;
 }
