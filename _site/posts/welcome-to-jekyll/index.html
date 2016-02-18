@@ -43,11 +43,28 @@
         </li>
 
         <li>
-          <a class="btn btn-primary-custom"
+          <a class="btn btn-primary-custom dropdown-toggle"
+             data-hover="dropdown"
+             aria-expanded="false"
+             aria-haspopup="true"
              role="button"
              href="/our_product">
-             Our Product
+             Our Product <span class="caret"></span>
           </a>
+
+          <ul class="dropdown-menu">
+            <li>
+              <a href="/our_product/#royalties">
+                Free Digital Signage &plus; Royalties
+              </a>
+            </li>
+
+            <li>
+              <a href="/our_product/#content_management">
+                Digital Signage &plus; Content Management
+              </a>
+            </li>
+          </ul>
         </li>
 
         <li>
@@ -87,30 +104,25 @@
         </li>
 
         <li>
-          <a class="btn btn-primary-custom dropdown-toggle"
-             data-hover="dropdown"
-             aria-expanded="false"
+          <a class="btn btn-primary-custom"
              role="button"
              href="/advertise">
-            Advertise <span class="caret"></span>
-          </a>
-          <ul class="dropdown-menu">
-            <li><a href="/sign_up">Sign Up</a></li>
-          </ul>
-        </li>
-
-        <li>
-          <a class="btn btn-primary-custom"
-             role="button"
-             href="/register">
-            Register
+            Advertise
           </a>
         </li>
 
         <li>
           <a class="btn btn-primary-custom"
              role="button"
-             href="/contact">
+             href="/contact/#register">
+            Register Your Venue
+          </a>
+        </li>
+
+        <li>
+          <a class="btn btn-primary-custom"
+             role="button"
+             href="/contact/#contact">
             Contact
           </a>
         </li>
@@ -157,7 +169,7 @@
         </p>
 
         <p class="pull-left">
-          &copy; 2015 Venue Media LLC
+          &copy; 2016 Venue Media LLC
         </p>
       </div>
     </div>
